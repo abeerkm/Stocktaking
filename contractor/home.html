@@ -1,0 +1,105 @@
+<?php 
+session_start();
+$user = $_GET['user'];
+echo "Hello $user";
+
+
+
+?>
+<script type = "text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+</script>
+<html lang="en">
+<head>
+	<title>tables </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="util.css">
+	<link rel="stylesheet" type="text/css" href="hpage.css">
+<!--===============================================================================================-->
+    
+<div class="topnav">
+
+  
+  
+  <!-- Left-aligned links (default) -->
+  <a href="hpage.html">Home page</a>
+  
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="logout.php">logout</a>
+  
+  </div>
+  
+</div>
+</head>
+<body>
+	<div class="table1">
+        <h1>Data tables</h1>
+  
+		<div class="container-table1">
+       <div class="container">
+             
+
+  <div class="center">
+    <div class="btn-group">
+    <button onclick="window.location.href='OnRouteFrom/table.php'">Inventory On Route From contractor</button>
+    <button onclick="window.location.href='OnRouteTo/table.php'">Inventory On Route To contractor</button>
+    <button onclick="window.location.href='inventoryAt/table.php'">Inventory at contractor</button>
+    <button onclick="window.location.href='GalReport/table.php'">Position Gal</button>
+    <button onclick="window.location.href='concentratedreport/reportTable.php'">Concentrated report</button>
+    <button onclick="window.location.href='Report/reportTable.php'">Detailed report to the contractor</button>
+  </div>
+</div>
+</div>
+  
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>

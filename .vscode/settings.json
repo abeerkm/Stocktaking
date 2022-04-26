@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\Users\\lets_\\Anaconda3\\python.exe",
+    "appService.defaultWebAppToDeploy": "/subscriptions/72f0338e-32ab-4caa-80ad-7ca87c5e520a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/newproj",
+    "appService.deploySubpath": "."
+}
